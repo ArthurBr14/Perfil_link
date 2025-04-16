@@ -6,14 +6,20 @@ body {
 
 h1 {
     color: #f1f1f1;
+    margin-bottom: 17px;
+    font-size: 27px;
 }
 
 h3 {
     color: #b7ce74;
+    margin-bottom: 31px;
+    font-size: 20px;
 }
 
 p {
     color: #f4f4f4;
+    margin-bottom: 28px;
+    font-size: 17px;
 }
 
 li {
@@ -55,12 +61,16 @@ nav li {
 
 }
 
+.insta {
+    margin-bottom: 30px;
+}
+
 section {
     justify-content: center;
     background-color: #1f1f1f;
     border-radius: 12px;
     width: 384px;
-    height: 610px;
+    height: 640px;
 
 }
 
@@ -69,10 +79,19 @@ section {
 
 }
 
+.Fotos {
+    height: 90px;
+    width: 90px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 90px;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
     color: #3d3b3b;
+    margin-top: 50px;
 }
 
 .attribution a {
