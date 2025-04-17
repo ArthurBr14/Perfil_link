@@ -1,29 +1,64 @@
-body {
-    justify-items: center;
-    background-color: #141414;
-    padding: 118px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --fw-normal: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
 }
 
-h1 {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    background-color: #141414;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    font-weight: var(--fw-normal);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.profile {
+    background-color: hsl(0, 0%, 12%);
+    margin: 0 auto;
+    border-radius: 12px;
+    width: 384px;
+    height: 640px;
+    flex: 1;
+
+}
+
+.profile h1 {
+    font-weight: var(--fw-bold);
     color: #f1f1f1;
     margin-bottom: 17px;
     font-size: 27px;
 }
 
-h3 {
+
+
+h2 {
     color: #b7ce74;
     margin-bottom: 31px;
     font-size: 20px;
 }
 
 p {
-    color: #f4f4f4;
+    color: hsl(0, 0%, 100%);
     margin-bottom: 28px;
-    font-size: 17px;
+    font-size: 14px;
 }
 
-li {
-    justify-content: center;
+a {
+    display: block;
+    text-decoration: none;
 }
 
 nav ul,
@@ -37,10 +72,24 @@ nav a {
     color: aliceblue;
 }
 
-nav li:hover,
-nav a:hover {
-    background-color: #c4f82a;
-    color: black;
+li {
+    margin-left: 38px;
+    margin-right: 38px;
+}
+
+.social_midea li a {
+    background-color: #3d3b3b;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 16px;
+    font-weight: var(--fw-semi-bold);
+    transition: all 0.3s ease-in-out;
+}
+
+.social_midea li:hover a {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    font-weight: var(--fw-semi-bold);
 }
 
 nav ul {
@@ -48,35 +97,14 @@ nav ul {
     flex-direction: column;
 }
 
-nav li {
-    justify-items: end;
-    align-items: center;
-    display: flex;
-    background-color: #323232;
-    border-radius: 10px;
-    height: 44px;
-    width: 305px;
-    margin-top: 15px;
-    margin-right: 39px;
-
-}
-
-.insta {
-    margin-bottom: 30px;
-}
-
-section {
-    justify-content: center;
-    background-color: #1f1f1f;
-    border-radius: 12px;
-    width: 384px;
-    height: 640px;
+main {
+    margin: 0 auto;
 
 }
 
 .page {
-    justify-items: center;
-
+    text-align: center;
+    display: flex;
 }
 
 .Fotos {
@@ -87,11 +115,14 @@ section {
     border-radius: 90px;
 }
 
+
 .attribution {
     font-size: 11px;
     text-align: center;
     color: #3d3b3b;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .attribution a {
